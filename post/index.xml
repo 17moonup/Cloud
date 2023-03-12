@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on su - Blog</title>
+    <title>Posts on Su - Blog</title>
     <link>http://suyiie.cloud/post/</link>
-    <description>Recent content in Posts on su - Blog</description>
+    <description>Recent content in Posts on Su - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 10 Mar 2023 19:09:36 +0800</lastBuildDate><atom:link href="http://suyiie.cloud/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 10:32:47 +0800</lastBuildDate><atom:link href="http://suyiie.cloud/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cns definitions</title>
+      <link>http://suyiie.cloud/post/cns/definitions/</link>
+      <pubDate>Sun, 12 Mar 2023 10:32:47 +0800</pubDate>
+      
+      <guid>http://suyiie.cloud/post/cns/definitions/</guid>
+      <description>蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。
+honey-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization&amp;rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.
+  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。
+Honey-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers.</description>
+    </item>
+    
     <item>
       <title>古典密碼學</title>
-      <link>http://suyiie.cloud/post/classic_crypto/</link>
+      <link>http://suyiie.cloud/post/cryptography/classic_crypto/</link>
       <pubDate>Fri, 10 Mar 2023 19:09:36 +0800</pubDate>
       
-      <guid>http://suyiie.cloud/post/classic_crypto/</guid>
-      <description>密码学的发展： 十九世纪五十年代之前——古典密码学
+      <guid>http://suyiie.cloud/post/cryptography/classic_crypto/</guid>
+      <description>古典密碼學 密码学的发展： 十九世纪五十年代之前——古典密码学
 十九世纪五十年代至1975——现代常规密码
 1976年之后——公钥密码学
 古典密码学类型：   代换式( Substitution )：代换密码是将字母（或是字母群）作有系统的代换，直到讯息被映射成其它难以解读的字。
@@ -31,10 +43,10 @@
     
     <item>
       <title>密碼學概論</title>
-      <link>http://suyiie.cloud/post/cryptography_concepts/</link>
+      <link>http://suyiie.cloud/post/cryptography/cryptography_concepts/</link>
       <pubDate>Thu, 09 Mar 2023 16:44:53 +0800</pubDate>
       
-      <guid>http://suyiie.cloud/post/cryptography_concepts/</guid>
+      <guid>http://suyiie.cloud/post/cryptography/cryptography_concepts/</guid>
       <description>密碼學（Cryptography） 前言：首先应当知晓cryptography和cryptology都被称为密码学，二者的分别之处在于cryptography指密码技术的应用，而cryptology指研究密码的本质，它包含密码术及密码分析（即研究如何破解密码学的学问）。但实际使用中通常统称密码学（cryptography）
 本章包含：  介绍密码学的概念、分类以及历史等  概念： Cryptography 一词来源于古希腊的 kryptós意为“隐藏的”和 gráphein意为 “书写”
 密码学分类（：Cryptography）  古典密码（Classic cryptography）：古典密码学主要关注信息的保密书写和传递，以及与其相对应的破译方法。其大部分加密方式都是利用替换式加密或移项式加密亦或二者的混合。 现代密码（Modern cryptography）：现代密码学不只关注信息保密问题，还同时涉及信息完整性验证（Message authentication code）、信息发布的不可抵赖性——数字签名（Digital Signature）、以及在分布式计算（Distributed computing/system）中产生的来源于内部和外部的攻击的所有信息安全问题。  古典密码学与现代密码学的重要区别： 古典密码学的编码和破译通常依赖于设计者和敌手的创造力与技巧，作为一种实用性艺术存在，并没有对于密码学原件的清晰定义。而现代密码学则起源于20世纪末出现的大量相关理论研究，也可以理解为先出现了cryptology再出现了cryptography。这些理论使得现代密码学成为了一种可以系统而严格地学习的科学。

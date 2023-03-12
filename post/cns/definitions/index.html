@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cns definitions | Su - Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。
+honey-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization&rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.
+  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。
+Honey-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers.">
+<meta name="author" content="Suyi">
+<link rel="canonical" href="http://suyiie.cloud/post/cns/definitions/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f31506494d50c1e73c10e63d252a2d8a2cb329e28c1402c71fee0d3145ad3685.css" integrity="sha256-8xUGSU1Qwec8EOY9JSotiiyzKeKMFALHH&#43;4NMUWtNoU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://suyiie.cloud/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://suyiie.cloud/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://suyiie.cloud/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://suyiie.cloud/apple-touch-icon.png">
+<link rel="mask-icon" href="http://suyiie.cloud/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Cns definitions" />
+<meta property="og:description" content="蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。
+honey-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization&rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.
+  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。
+Honey-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://suyiie.cloud/post/cns/definitions/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-03-12T10:32:47+08:00" />
+<meta property="article:modified_time" content="2023-03-12T10:32:47+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cns definitions"/>
+<meta name="twitter:description" content="蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。
+honey-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization&rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.
+  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。
+Honey-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Cns definitions",
+      "item": "http://suyiie.cloud/post/cns/definitions/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cns definitions",
+  "name": "Cns definitions",
+  "description": "蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。\nhoney-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization\u0026rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.\n  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。\nHoney-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers.",
+  "keywords": [
+    
+  ],
+  "articleBody": "蜜罐( Honey-pot ）：   Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。\nhoney-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization’s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.\n  蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。\nHoney-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers.\n  蜜罐主要有低交互型蜜罐（Low-Interaction Honeypot）和高交互型蜜罐（High-Interaction Honeypot）两种。低交互型蜜罐是虚拟的操作系统或应用程序，仅限于诱骗攻击者执行攻击重点命令或行为的环境，因为其只提供了一些有限的目标应用，所以其几乎不会对内部系统造成损害。而高交互型蜜罐则是一个完整的虚拟系统，提供了和真实系统相似的功能和服务，并与攻击者进行强交互，更接近真实系统，但也更容易降低系统安全性。\n  深度包檢測技術( Deep Packet Inspection )：   深度包检测技术是一种网络流量分析技术。它通过对数据包进行深入的分析，全面、有效地监控互联网流量，以提高网络的安全性和性能，并实现对其控制、过滤和管理。\nDeep Packet Inspection (DPI) is a network traffic analysis technology that comprehensively and effectively monitors, controls, filters, and manages internet traffic to improve network security and performance by analyzing data packets in depth.\n  深度包检测技术可分析数据包内容，确定协议类型、地址和长度等信息，进行流量管理和控制。与传统技术不同，它可在更深层次上检测应用、传输和网络层。\n  物理隔離： 物理隔离（Physical Gap）实际上就是指，内部网不直接或间接的连接公共网。\n反射攻擊：   反射攻击是指攻击者利用网络上的某些服务或协议对目标发起的一种攻击方式。攻击者通过伪造目标 IP 地址，向受害者发起一种看似合法的请求，其响应结果会被返回到目标 IP 地址上，造成目标被攻击。\n  具体来说，反射攻击通常涉及到以下几个步骤：\n 攻击者通过扫描目标机器，找到可以被攻击利用的网络服务或系统漏洞。 攻击者向这些服务或系统发送伪造的请求，将请求报文中的源 IP 地址伪造成目标机器的 IP 地址。 攻击请求经过网络传输到第三方服务器，并得到响应结果。 响应结果被返回到目标机器的 IP 地址上，导致目标机器遭受攻击。    反射攻击的危害非常大，可以造成网络拒绝服务（DDoS）攻击、跨站点脚本（XSS）攻击、SQL注入攻击等多种安全问题。为避免反射攻击带来的安全风险，我们可以采取以下措施：\n   使用网络安全设备或服务，例如防火墙、入侵检测系统、流量分析器等，对网络流量进行严格的过滤和监控。 对公网服务器和应用程序进行安全加固和漏洞修复，尽量避免被攻击者利用。 设置访问控制清单（ACL）和白名单，限制对目标服务器和服务的访问。 教育用户和网络管理员提高安全意识和信息安全知识，定期对网络设施进行漏洞扫描和安全检测。  放大攻擊：   放大攻击是一种网络安全攻击，攻擊者利用某些协议或服务来放大其攻击流量，从而增加攻击成功的可能性。一般來説，放大攻擊都是通過反射攻擊實現的。\n  放大攻击的原理是利用一些服务或协议的特性，使得单个请求可以获得多个响应，进而将响应结果放大到比请求流量更大的规模。攻击者可以将少量的攻击流量通过反射攻击或绕开一些安全控制，转换成规模更大的攻击流量，从而对目标网站或服务器造成拒绝服务（DDoS）攻击。\n常见的放大攻击包括 DNS 放大攻击、NTP 放大攻击、SSDP 放大攻击、SNMP 放大攻击等。这些协议或服务都具有一定的规模放大效应，攻击者可以利用这些协议或服务的漏洞，大量地发送伪造的请求报文并将其反射到目标服务器上，从而让目标服务器遭受攻击。\n为了防止放大攻击，我们可以采取以下措施：\n 尽可能地禁用一些具有放大效应的服务或协议，例如 DNS 劫持、NTP 劫持等。 加强对危险端口的管理和封禁，限制通过这些端口进出网络的流量。 对网络设备和系统进行安全强化和漏洞修复，尽量避免被攻击者利用漏洞进行攻击。 配置防火墙、IDS/IPS 等安全设备，及时检测和阻止攻击流量，减少攻击对目标服务器的影响。 定期对网络进行安全扫描和漏洞评估，及时发现和处理隐患。    特洛伊木馬(Trojan Horse):  特洛伊木马（Trojan Horse）是指一种看似无害或有益的程序，但实际上包含恶意代码，可以在没有受害者授权的情况下，操纵其计算机系统、窃取敏感信息或者损坏数据等。 特洛伊木马通常会被嵌入到看似正常的文件、软件或程序中，以迷惑受害者并获得系统访问权限。一旦安装运行后，特洛伊木马就会开始执行其恶意行为。常见的特洛伊木马包括：键盘记录木马、远程控制木马、rootkit 木马等。  網絡安全(Network Security):  网络安全指的是保护计算机网络不受未经授权的访问、攻击、损坏或盗窃，从而维护计算机网络的完整性、可用性和保密性。  防火墻(Firewall):   防火墙是指位于计算机网络与外部互联网络之间的一种网络安全设备。防火墙可以对网络流量进行监管和控制，以保护网络内部不受外部威胁和攻击，并控制网络出入口，限制对网络资源的访问。\n  防火墙通常具有以下几种特性：\n   网络访问控制：根据安全策略和规则，限制用户和服务对网络资源的访问。 状态检测：对网络流量进行记录和分析，识别和过滤具有攻击特征的流量。 包过滤：对进入和离开网络的流量进行筛选和拦截，防止不合法的流量加入到网络内部。 NAT 网络地址转换：对 IP 地址进行转换，隐藏内部网络的地址。 VPN 虚拟专用网络：对数据进行加密传输，保证网络中数据传输的机密性和完整性。   防火墙可按其工作原理分为以下几种类型：   包过滤型防火墙：根据预定义好的访问控制列表，对进入和离开网络的流量进行筛选和拦截。 状态检测型防火墙：对网络上的每个连接进行检查和记录，只允许特定行为和状态的流量通过。 应用层网关型防火墙：可检测和阻止流量中恶意代码和危险内容，可以深层次地针对应用层协议进行控制和过滤。   防火墙作为一种重要的网络安全设备，可以有效地保护网络安全和隐私。但同时防火墙也存在一些局限性，例如无法检测内部员工恶意行为、对 DDos 攻击防御效果不佳等。因此，我们需要运用多种安全技术和策略来确保网络的安全性。  IPS(Intrusion Prevention System):   IPS (Intrusion Prevention System)入侵防御系统可以发现入侵行为，阻断入侵行为，是一种侧重于风险控制的安全机制。\n  与传统的防火墙和IDS（入侵检测系统）不同，IPS不仅能够检测流量并报告对系统的潜在攻击，还能够对流量实施主动阻挡和清除，从而有效地预防和阻止网络攻击。\n  IPS可以分为网络IPS和主机IPS两种类型。网络IPS位于网络入口处或边界节点，对流量进行实时检测和分析，并执行相应的防御和预防措施；主机IPS则部署在主机上，可对主机内部的流量和系统状况进行监测和保护。\n  IPS的一些主要特点包括：\n   实时性：能够实时检测、监控和响应流量，从而及时发现和防止攻击。 自动化：能够自动地响应和控制潜在攻击，减少对人工干预的要求。 高效性：能够有效地深度识别和防御各种内外部安全威胁，提高整个网络的安全性。 可扩展性：能够适应各种网络环境和需要，可根据不同的安全需求和预算加以选择和应用。   总的来说，IPS是一种非常重要的网络安全工具，能够有效地增强网络安全防御系统的实时性和高效性，提高网络和系统的安全性和稳定性。但需要配合其他防御措施，如防火墙、杀毒软件等，共同维护网络安全。  DOS(Denial of Service):  DOS（拒絕服務）攻擊是一種網路攻擊類型，攻擊者試圖通過使網站、網絡或在線服務不可用來進行攻擊。這通常是通過使用多台計算機或設備向目標伺服器洪水般地發送流量或請求來實現的，從而使其無法回答合法的請求。 DOS 攻擊可能會導致網站變得緩慢、崩潰或完全無法使用，這對於依賴其在線存在的企業或組織可能會產生重大影響。  VPN(Virtual Private Network):  VPN（虛擬私人網路）是指在公用网络上建立一个私有的、专用的虚拟通信网络。VPN在企业网络中有广泛应用，VPN网关通过对数据包的加密和数据包目标地址的转换实现远程访问。  ",
+  "wordCount" : "216",
+  "inLanguage": "en",
+  "datePublished": "2023-03-12T10:32:47+08:00",
+  "dateModified": "2023-03-12T10:32:47+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suyi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://suyiie.cloud/post/cns/definitions/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Su - Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://suyiie.cloud/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://suyiie.cloud/" accesskey="h" title="Su - Blog (Alt + H)">Su - Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Cns definitions
+    </h1>
+    <div class="post-meta"><span title='2023-03-12 10:32:47 +0800 CST'>March 12, 2023</span>&nbsp;·&nbsp;Suyi
+
+</div>
+  </header> 
+  <div class="post-content"><h4 id="蜜罐-honey-pot-">蜜罐( Honey-pot ）：<a hidden class="anchor" aria-hidden="true" href="#蜜罐-honey-pot-">#</a></h4>
+<ul>
+<li>
+<p>Honey-pot是一種安全技術，指在組織或企業的計算機系統、網絡環境中故意設置易受攻擊的虛擬系統或者服務，以吸引黑客前來攻擊，同時監測駭客威脅並防止對内部系統的真實攻擊。</p>
+<p>honey-pot is a security tech that intentionally places vulnerable virtual systems or services in an enterprise or organization&rsquo;s computer system or network environment to attract hackers to attack, while monitoring hacker threats and preventing real attacks on internal systems.</p>
+</li>
+<li>
+<p>蜜罐技術是一種主動的安全防範技術，通過誘捕攻擊者，獲取攻擊者的信息及攻擊手段，從而達到預防和追蹤的效果。</p>
+<p>Honey-pot technology is an active security measure that capture attackers to get the information and attack methods of attackers, thereby better protecting their own computer system and network environment and tracking attackers.</p>
+</li>
+<li>
+<p>蜜罐主要有低交互型蜜罐（Low-Interaction Honeypot）和高交互型蜜罐（High-Interaction Honeypot）两种。低交互型蜜罐是虚拟的操作系统或应用程序，仅限于诱骗攻击者执行攻击重点命令或行为的环境，因为其只提供了一些有限的目标应用，所以其几乎不会对内部系统造成损害。而高交互型蜜罐则是一个完整的虚拟系统，提供了和真实系统相似的功能和服务，并与攻击者进行强交互，更接近真实系统，但也更容易降低系统安全性。</p>
+</li>
+</ul>
+<h4 id="深度包檢測技術-deep-packet-inspection-">深度包檢測技術( Deep Packet Inspection )：<a hidden class="anchor" aria-hidden="true" href="#深度包檢測技術-deep-packet-inspection-">#</a></h4>
+<ul>
+<li>
+<p>深度包检测技术是一种网络流量分析技术。它通过对数据包进行深入的分析，全面、有效地监控互联网流量，以提高网络的安全性和性能，并实现对其控制、过滤和管理。</p>
+<p>Deep Packet Inspection (DPI) is a network traffic analysis technology that comprehensively and effectively monitors, controls, filters, and manages internet traffic to improve network security and performance by analyzing data packets in depth.</p>
+</li>
+<li>
+<p>深度包检测技术可分析数据包内容，确定协议类型、地址和长度等信息，进行流量管理和控制。与传统技术不同，它可在更深层次上检测应用、传输和网络层。</p>
+</li>
+</ul>
+<h4 id="物理隔離">物理隔離：<a hidden class="anchor" aria-hidden="true" href="#物理隔離">#</a></h4>
+<p>物理隔离（Physical Gap）实际上就是指，内部网不直接或间接的连接公共网。</p>
+<p><img loading="lazy" src="C:%5cUsers%5c85322%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20230311165040713.png" alt="示意圖"  />
+</p>
+<h4 id="反射攻擊">反射攻擊：<a hidden class="anchor" aria-hidden="true" href="#反射攻擊">#</a></h4>
+<ul>
+<li>
+<p>反射攻击是指攻击者利用网络上的某些服务或协议对目标发起的一种攻击方式。攻击者通过伪造目标 IP 地址，向受害者发起一种看似合法的请求，其响应结果会被返回到目标 IP 地址上，造成目标被攻击。</p>
+</li>
+<li>
+<p>具体来说，反射攻击通常涉及到以下几个步骤：</p>
+<ol>
+<li>攻击者通过扫描目标机器，找到可以被攻击利用的网络服务或系统漏洞。</li>
+<li>攻击者向这些服务或系统发送伪造的请求，将请求报文中的源 IP 地址伪造成目标机器的 IP 地址。</li>
+<li>攻击请求经过网络传输到第三方服务器，并得到响应结果。</li>
+<li>响应结果被返回到目标机器的 IP 地址上，导致目标机器遭受攻击。</li>
+</ol>
+</li>
+<li>
+<p>反射攻击的危害非常大，可以造成网络拒绝服务（DDoS）攻击、跨站点脚本（XSS）攻击、SQL注入攻击等多种安全问题。为避免反射攻击带来的安全风险，我们可以采取以下措施：</p>
+</li>
+</ul>
+<ol>
+<li>使用网络安全设备或服务，例如防火墙、入侵检测系统、流量分析器等，对网络流量进行严格的过滤和监控。</li>
+<li>对公网服务器和应用程序进行安全加固和漏洞修复，尽量避免被攻击者利用。</li>
+<li>设置访问控制清单（ACL）和白名单，限制对目标服务器和服务的访问。</li>
+<li>教育用户和网络管理员提高安全意识和信息安全知识，定期对网络设施进行漏洞扫描和安全检测。</li>
+</ol>
+<h4 id="放大攻擊">放大攻擊：<a hidden class="anchor" aria-hidden="true" href="#放大攻擊">#</a></h4>
+<ul>
+<li>
+<p>放大攻击是一种网络安全攻击，攻擊者利用某些协议或服务来放大其攻击流量，从而增加攻击成功的可能性。一般來説，放大攻擊都是通過反射攻擊實現的。</p>
+</li>
+<li>
+<p>放大攻击的原理是利用一些服务或协议的特性，使得单个请求可以获得多个响应，进而将响应结果放大到比请求流量更大的规模。攻击者可以将少量的攻击流量通过反射攻击或绕开一些安全控制，转换成规模更大的攻击流量，从而对目标网站或服务器造成拒绝服务（DDoS）攻击。</p>
+<p>常见的放大攻击包括 DNS 放大攻击、NTP 放大攻击、SSDP 放大攻击、SNMP 放大攻击等。这些协议或服务都具有一定的规模放大效应，攻击者可以利用这些协议或服务的漏洞，大量地发送伪造的请求报文并将其反射到目标服务器上，从而让目标服务器遭受攻击。</p>
+<p>为了防止放大攻击，我们可以采取以下措施：</p>
+<ol>
+<li>尽可能地禁用一些具有放大效应的服务或协议，例如 DNS 劫持、NTP 劫持等。</li>
+<li>加强对危险端口的管理和封禁，限制通过这些端口进出网络的流量。</li>
+<li>对网络设备和系统进行安全强化和漏洞修复，尽量避免被攻击者利用漏洞进行攻击。</li>
+<li>配置防火墙、IDS/IPS 等安全设备，及时检测和阻止攻击流量，减少攻击对目标服务器的影响。</li>
+<li>定期对网络进行安全扫描和漏洞评估，及时发现和处理隐患。</li>
+</ol>
+</li>
+</ul>
+<h4 id="特洛伊木馬trojan-horse">特洛伊木馬(Trojan Horse):<a hidden class="anchor" aria-hidden="true" href="#特洛伊木馬trojan-horse">#</a></h4>
+<ul>
+<li>特洛伊木马（Trojan Horse）是指一种看似无害或有益的程序，但实际上包含恶意代码，可以在没有受害者授权的情况下，操纵其计算机系统、窃取敏感信息或者损坏数据等。</li>
+<li>特洛伊木马通常会被嵌入到看似正常的文件、软件或程序中，以迷惑受害者并获得系统访问权限。一旦安装运行后，特洛伊木马就会开始执行其恶意行为。常见的特洛伊木马包括：键盘记录木马、远程控制木马、rootkit 木马等。</li>
+</ul>
+<h4 id="網絡安全network-security">網絡安全(Network Security):<a hidden class="anchor" aria-hidden="true" href="#網絡安全network-security">#</a></h4>
+<ul>
+<li>网络安全指的是保护计算机网络不受未经授权的访问、攻击、损坏或盗窃，从而维护计算机网络的完整性、可用性和保密性。</li>
+</ul>
+<h4 id="防火墻firewall">防火墻(Firewall):<a hidden class="anchor" aria-hidden="true" href="#防火墻firewall">#</a></h4>
+<ul>
+<li>
+<p>防火墙是指位于计算机网络与外部互联网络之间的一种网络安全设备。防火墙可以对网络流量进行监管和控制，以保护网络内部不受外部威胁和攻击，并控制网络出入口，限制对网络资源的访问。</p>
+</li>
+<li>
+<p>防火墙通常具有以下几种特性：</p>
+</li>
+</ul>
+<ol>
+<li>网络访问控制：根据安全策略和规则，限制用户和服务对网络资源的访问。</li>
+<li>状态检测：对网络流量进行记录和分析，识别和过滤具有攻击特征的流量。</li>
+<li>包过滤：对进入和离开网络的流量进行筛选和拦截，防止不合法的流量加入到网络内部。</li>
+<li>NAT 网络地址转换：对 IP 地址进行转换，隐藏内部网络的地址。</li>
+<li>VPN 虚拟专用网络：对数据进行加密传输，保证网络中数据传输的机密性和完整性。</li>
+</ol>
+<ul>
+<li>防火墙可按其工作原理分为以下几种类型：</li>
+</ul>
+<ol>
+<li>包过滤型防火墙：根据预定义好的访问控制列表，对进入和离开网络的流量进行筛选和拦截。</li>
+<li>状态检测型防火墙：对网络上的每个连接进行检查和记录，只允许特定行为和状态的流量通过。</li>
+<li>应用层网关型防火墙：可检测和阻止流量中恶意代码和危险内容，可以深层次地针对应用层协议进行控制和过滤。</li>
+</ol>
+<ul>
+<li>防火墙作为一种重要的网络安全设备，可以有效地保护网络安全和隐私。但同时防火墙也存在一些局限性，例如无法检测内部员工恶意行为、对 DDos 攻击防御效果不佳等。因此，我们需要运用多种安全技术和策略来确保网络的安全性。</li>
+</ul>
+<h4 id="ipsintrusion-prevention-system">IPS(Intrusion Prevention System):<a hidden class="anchor" aria-hidden="true" href="#ipsintrusion-prevention-system">#</a></h4>
+<ul>
+<li>
+<p>IPS (Intrusion Prevention System)入侵防御系统可以发现入侵行为，阻断入侵行为，是一种侧重于风险控制的安全机制。</p>
+</li>
+<li>
+<p>与传统的防火墙和IDS（入侵检测系统）不同，IPS不仅能够检测流量并报告对系统的潜在攻击，还能够对流量实施主动阻挡和清除，从而有效地预防和阻止网络攻击。</p>
+</li>
+<li>
+<p>IPS可以分为网络IPS和主机IPS两种类型。网络IPS位于网络入口处或边界节点，对流量进行实时检测和分析，并执行相应的防御和预防措施；主机IPS则部署在主机上，可对主机内部的流量和系统状况进行监测和保护。</p>
+</li>
+<li>
+<p>IPS的一些主要特点包括：</p>
+</li>
+</ul>
+<ol>
+<li>实时性：能够实时检测、监控和响应流量，从而及时发现和防止攻击。</li>
+<li>自动化：能够自动地响应和控制潜在攻击，减少对人工干预的要求。</li>
+<li>高效性：能够有效地深度识别和防御各种内外部安全威胁，提高整个网络的安全性。</li>
+<li>可扩展性：能够适应各种网络环境和需要，可根据不同的安全需求和预算加以选择和应用。</li>
+</ol>
+<ul>
+<li>总的来说，IPS是一种非常重要的网络安全工具，能够有效地增强网络安全防御系统的实时性和高效性，提高网络和系统的安全性和稳定性。但需要配合其他防御措施，如防火墙、杀毒软件等，共同维护网络安全。</li>
+</ul>
+<h4 id="dosdenial-of-service">DOS(Denial of Service):<a hidden class="anchor" aria-hidden="true" href="#dosdenial-of-service">#</a></h4>
+<ul>
+<li>DOS（拒絕服務）攻擊是一種網路攻擊類型，攻擊者試圖通過使網站、網絡或在線服務不可用來進行攻擊。這通常是通過使用多台計算機或設備向目標伺服器洪水般地發送流量或請求來實現的，從而使其無法回答合法的請求。 DOS 攻擊可能會導致網站變得緩慢、崩潰或完全無法使用，這對於依賴其在線存在的企業或組織可能會產生重大影響。</li>
+</ul>
+<h4 id="vpnvirtual-private-network">VPN(Virtual Private Network):<a hidden class="anchor" aria-hidden="true" href="#vpnvirtual-private-network">#</a></h4>
+<ul>
+<li>VPN（虛擬私人網路）是指在公用网络上建立一个私有的、专用的虚拟通信网络。VPN在企业网络中有广泛应用，VPN网关通过对数据包的加密和数据包目标地址的转换实现远程访问。</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+
+</html>
