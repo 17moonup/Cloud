@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Su - Blog</title>
-    <link>https://www.suyiie.cloud/tags/</link>
+    <link>https://suyiie.cloud/tags/</link>
     <description>Recent content in Tags on Su - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Mar 2023 13:02:23 +0800</lastBuildDate><atom:link href="https://www.suyiie.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 13:02:23 +0800</lastBuildDate><atom:link href="https://suyiie.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cryptography</title>
-      <link>https://www.suyiie.cloud/tags/cryptography/</link>
+      <link>https://suyiie.cloud/tags/cryptography/</link>
       <pubDate>Tue, 14 Mar 2023 13:02:23 +0800</pubDate>
       
-      <guid>https://www.suyiie.cloud/tags/cryptography/</guid>
+      <guid>https://suyiie.cloud/tags/cryptography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network security</title>
-      <link>https://www.suyiie.cloud/tags/network-security/</link>
+      <link>https://suyiie.cloud/tags/network-security/</link>
       <pubDate>Tue, 14 Mar 2023 13:02:23 +0800</pubDate>
       
-      <guid>https://www.suyiie.cloud/tags/network-security/</guid>
+      <guid>https://suyiie.cloud/tags/network-security/</guid>
       <description></description>
     </item>
     
