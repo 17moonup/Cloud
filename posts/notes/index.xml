@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>cryptography on Su - Blog</title>
-    <link>https://www.suyiie.cloud/tags/cryptography/</link>
-    <description>Recent content in cryptography on Su - Blog</description>
+    <title> Notes  on Su - Blog</title>
+    <link>https://www.suyiie.cloud/posts/notes/</link>
+    <description>Recent content in  Notes  on Su - Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Mar 2023 13:02:23 +0800</lastBuildDate><atom:link href="https://www.suyiie.cloud/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 13:02:23 +0800</lastBuildDate><atom:link href="https://www.suyiie.cloud/posts/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cns_Definitions</title>
       <link>https://www.suyiie.cloud/posts/notes/cns_definitions/</link>
@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://www.suyiie.cloud/posts/life/test/</link>
-      <pubDate>Tue, 14 Mar 2023 12:45:11 +0800</pubDate>
+      <title>answer</title>
+      <link>https://www.suyiie.cloud/posts/notes/answer/</link>
+      <pubDate>Sun, 12 Mar 2023 20:08:30 +0800</pubDate>
       
-      <guid>https://www.suyiie.cloud/posts/life/test/</guid>
-      <description></description>
+      <guid>https://www.suyiie.cloud/posts/notes/answer/</guid>
+      <description>如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法： 使用网络地址转换（NAT）： NAT是一种将一组公共</description>
     </item>
     
     <item>
