@@ -1,11 +1,436 @@
-<article class="ui segment post-disqus-area" data-html2canvas-ignore>
-    <div id="tcomment"></div>
-      <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
-      <script>
-      twikoo.init({
-        envId: '*********',
-        el: '#tcomment',
-        
-        
-      })
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>answer | Su - Blog</title>
+<meta name="keywords" content="Network security">
+<meta name="description" content="如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法： 使用网络地址转换（NAT）： NAT是一种将一组公共">
+<meta name="author" content="Suyi">
+<link rel="canonical" href="https://suyiie.cloud/posts/notes/answer/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.753ceea6d86f6cc1fcb39b0b416367df17ea858a4156dd433af9bcf36a66b0b3.css" integrity="sha256-dTzupthvbMH8s5sLQWNn3xfqhYpBVt1DOvm882pmsLM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://suyiie.cloud/img/cat.gif">
+<link rel="icon" type="image/png" sizes="16x16" href="https://suyiie.cloud/img/cat.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="https://suyiie.cloud/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://suyiie.cloud/img/mygirl.gif">
+<link rel="mask-icon" href="https://suyiie.cloud/img/mygirl.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="answer" />
+<meta property="og:description" content="如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法： 使用网络地址转换（NAT）： NAT是一种将一组公共" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://suyiie.cloud/posts/notes/answer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-12T20:08:30+08:00" />
+<meta property="article:modified_time" content="2023-03-12T20:08:30+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="answer"/>
+<meta name="twitter:description" content="如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法： 使用网络地址转换（NAT）： NAT是一种将一组公共"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "answer",
+      "item": "https://suyiie.cloud/posts/notes/answer/"
+    }
+  ]
+}
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "answer",
+  "name": "answer",
+  "description": "如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法： 使用网络地址转换（NAT）： NAT是一种将一组公共",
+  "keywords": [
+    "Network security"
+  ],
+  "articleBody": "如何防御IP欺骗攻击。 IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法：\n 使用网络地址转换（NAT）： NAT是一种将一组公共IP地址分配给连接到互联网的私有网络的网络协议。 NAT可防止攻击者直接访问网络上的主机，从而增加攻击者攻击的难度。 正确配置网络和协议：正确配置网络和协议可以为攻击者提供更少的攻击机会。例如，关闭不必要的端口和服务，使用VPN加密数据传输等。 使用防火墙：防火墙可以过滤网络流量并拦截恶意流量。防火墙可以配置为根据IP地址、端口号以及流量类型及大小，防止攻击流量进入网络。 实施防欺骗技术：防欺骗技术可以检测IP欺骗攻击并提供保护。例如，使用反欺骗技术、源地址验证技术等。 更新系统和软件：更新系统和软件可以填补安全漏洞，避免攻击者利用漏洞攻击网络。建议定期更新操作系统、应用程序和网络设备的所有安全修补程序。  DMZ的访问控制策略 DMZ（Demilitarized Zone，非军事区）是指位于防火墙内部和外部网络之间的一块区域，用于存放需要向外公开访问的服务或资源。为了确保DMZ内的服务或资源能够被合法的用户或服务访问，需要制定适当的访问控制策略，以下是几个常用的策略：\n 仅允许授权用户或服务访问：DMZ内的服务或资源仅应向经过授权的用户或服务提供，可以通过启用身份验证、封锁非授权IP地址等方式来实现。 限制访问权限：对于需要对外公开访问的服务或资源，应根据不同层级、角色、职能等需求，限制访问权限，并对不同层级、角色、职能等用户或服务授予不同的权限。 监测和记录访问行为：在DMZ设立监测和记录机制，可以及时发现和记录不正常的访问行为，避免攻击者利用漏洞进行攻击。如果出现问题，可以快速定位问题并采取相应的措施。 定期审查和更新策略：定期审查和更新DMZ的访问控制策略可以保持策略的有效性，并避免新的攻击手段瞬息万变，而导致未预料的漏洞安全问题。  综上所述，DMZ的访问控制策略可以根据网络和DMZ内的服务和资源的特点来制定，并需要不断完善和更新，以保护DMZ内的服务或资源免受未经授权的访问或攻击。\n网络攻击的一般步骤和网络攻击的目标 网络攻击的一般步骤：\n 侦察：攻击者通过各种手段收集目标网络的信息，包括网络结构、计算机设备、运行系统和服务等，为后续攻击做准备。 突破：攻击者通过漏洞或弱点，利用各种工具逐步突破网络安全防线，例如SQL注入、漏洞利用等。 渗透：攻击者利用已经突破的漏洞获取目标网络的控制权，例如使用远程控制软件、恶意代码等。 控制：攻击者获得了目标系统的控制权之后，可以通过植入恶意软件、获取关键数据等方式，进一步扩大攻击范围和控制权。 清理：攻击完成后，攻击者会尽可能消除留下的踪迹，并隐藏自身身份。  网络攻击的目标：\n网络攻击的目标通常可以分为以下几种类型：\n 窃取敏感信息：例如个人身份证号、银行账户密码、公司机密等。 破坏系统、服务或资源：通过破坏系统、服务或资源而对目标网络实施攻击。 制造威胁、恐吓或诈骗：通过向用户发起威胁、恐吓或诈骗等方式，实施网络攻击。 赚钱：通过植入广告、窃取账户密码等方式获取利益。 竞争对手攻击：企业或组织之间为了竞争优势，也可能实施网络攻击。  加Salt散列法在抵御口令攻击的原理 传统的散列函数（如 MD5，SHA1 等）的输出结果是固定长度的字符串，因此攻击者可以使用预计算表 (rainbow table) 或暴力猜解等方法轻松地破解散列值。\n为了加强口令的安全性，通常采用加Salt散列的方式。\n所谓“Salt”，其实就是一段随机的字符串，在原有口令的基础上添加该字符串进行散列计算，从而增加了原始口令的熵（entropy），加强了密码的安全性。攻击者在猜解的时候，无法通过预先计算出现的 Hash 值来轻松破解，因为Salt只有拥有者知道。\n例如，假设用户的口令是 “password”，系统生成了一段随机字符串“123”，将两者结合起来形成“password123”，然后通过散列函数进行计算得到一个散列值，并将其存储在系统中。当用户登录时，系统会根据散列值对提供的口令进行散列计算，并与储存的散列值进行比对，从而判断口令是否正确。\n加Salt散列的方式可以抵御口令暴力破解攻击，因为攻击者需要针对每一个用户的口令进行独立的攻击，这对于攻击者来说是一项巨大的工作量。此外，由于Salt是随机且足够长的字符串，即使攻击者能够建立一张预先计算表（rainbow table），其在猜解时也无法掌握该Salt字符串的值，从而使攻击者即使成功获得了一个口令的 Hash 值，也无法在其他地方进行攻击。\n总之，Salt值可以增强散列计算的安全性，提高口令的熵级别，从而对抵御口令攻击起到积极作用。\n网闸的工作原理及典型应用 网闸（Network Barricade）是一种网络安全设备，其工作原理基于对网络通信流量进行监控，对不符合规则的通信流量进行过滤和拦截，以实现网络安全保护。\n网闸的典型工作原理可以分为以下几个步骤：\n 数据采集：网闸采集网络通信流量数据，从网络中获取通信数据包，并获取其中的源IP地址、目标IP地址、协议、端口等信息。 数据分析：网闸将采集到的数据进行分析和判断，判断该通信是否符合规则和策略，并确定是否需要进行拦截和过滤。 数据过滤：当网闸判断出某个通信数据包需要被拦截时，可以对该数据包进行动态封堵，以阻止此类通信流量的进一步传输。 数据记录：网闸会对不符合规则的通信流量进行记录，并将其汇总成报表或日志等，以便管理员或安全人员进行进一步分析和挖掘。  网闸的应用主要有以下几种典型场景：\n 企业边界保护：网闸作为企业出口的第一道安全防线，可以保护整个企业内部网络的安全。 网络分段与隔离：当一个组织或企业的网络分布在多个地理位置时，网闸可以对网络和网络资源进行分段和隔离，从而保障不同网络和资源的安全。 Web应用程序保护：网闸对Web应用程序进行过滤和拦截，可以阻挡各种类型的攻击，从而降低Web应用程序的漏洞被攻击的风险。 数据中心保护：网闸可以对数据中心进行保护，过滤非法访问和数据包，并阻挡针对数据中心的各种类型的攻击。  标准ACL和扩展ACL有何异同:    序号 异同点 标准ACL 扩展ACL     1 目标 仅基于源IP地址的过滤 基于源IP地址、目标IP地址、协议、端口号、IP类型等   2 处理位置 网络出口或核心路由器 边缘路由器   3 记录条目数 较少 较多   4 执行顺序 从上往下 顺序应用多个记录   5 效率 高 低    分布式拒绝服务攻击的一般步骤及防范措施: 分布式拒绝服务攻击（DDoS，Distributed Denial of Service Attack）是一种网络攻击方式，通常以大量制造的假数据流量对目标系统或服务进行攻击，使其无法正常运行。DDoS攻击的一般步骤如下：\n 组织军队：攻击者组织大量的僵尸网络，通常使用僵尸网络蠕虫、木马、WebShell等恶意程序来控制受害计算机。 控制攻击：一旦构建起成千上万的僵尸网络，攻击者就会发起指令，使其发起攻击流量。 流量打击：这些僵尸网络同时向目标系统或服务发出大量流量攻击，使其无法正常运行。  对于DDoS攻击的防范措施如下：\n 配置边界防护设施：可以使用防火墙、IPS / IDS等边界防护设施，以过滤来自外部网络的恶意数据流量，并减缓DDoS攻击的影响。 使用负载均衡器：负载均衡器可以分发流量，使攻击流量更加均匀地分布到多个服务器上，从而减轻单个服务器的负担。 预防攻击蠕虫：加强计算机用户的安全意识和网络安全意识，以避免病毒、蠕虫和恶意软件等恶意程序的攻击。 配置黑名單  IPsec VPN IPSec VPN是一种三层隧道协议。\n三层隧道协议是把各种网络协议直接装入隧道协议中，形成的数据包依靠第三层协议进行传输。\n同时提供安全协议选择、安全算法，确定服务所使用密钥等服务，从而在IP层提供安全保障。\nIPSec有如下两种封装模式：\n（1）隧道（Tunnel）模式：用户的整个IP数据包被用来计算AH或ESP头，AH或ESP头以及ESP加密的用户数据被封装在一个新的IP数据包中。通常，隧道模式应用在两个安全网关之间的通讯。\n（2）传输（Transport）模式：只是传输层数据被用来计算AH或ESP头，AH或ESP头以及ESP加密的用户数据被放置在原IP包头后面。通常，传输模式应用在两台主机之间的通讯，或一台主机和一个安全网关之间的通讯。\nIPSec VPN提供了三种安全机制：认证、加密和数据完整性。\n（1）认证机制。使IP通信的数据接收方能够确认数据发送方的真实身份以及数据在传输过程中是否遭篡改。\n（2）加密机制。通过对数据进行加密运算来保证数据的机密性，以防数据在传输过程中被窃听。\n（3）数据完整性。使IP通信的数据接收方能够确认数据在传输过程中是否遭篡改。\n",
+  "wordCount" : "3490",
+  "inLanguage": "en",
+  "datePublished": "2023-03-12T20:08:30+08:00",
+  "dateModified": "2023-03-12T20:08:30+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Suyi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://suyiie.cloud/posts/notes/answer/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Su - Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suyiie.cloud/img/cat.gif"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://suyiie.cloud" accesskey="h" title="Suyi - Blog (Alt + H)">
+                <img src="https://suyiie.cloud/img/cover.gif" alt="" aria-label="logo"
+                    height="35">Suyi - Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://suyiie.cloud/" title="主頁">
+                    <span>主頁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://suyiie.cloud/post/about" title="關於">
+                    <span>關於</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://suyiie.cloud">Home</a></div>
+    <h1 class="post-title">
+      answer
+    </h1>
+    <div class="post-meta"><span title='2023-03-12 20:08:30 +0800 CST'>March 12, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Suyi
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul><ul>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e9%98%b2%e5%be%a1ip%e6%ac%ba%e9%aa%97%e6%94%bb%e5%87%bb" aria-label="如何防御IP欺骗攻击。">如何防御IP欺骗攻击。</a></li>
+                <li>
+                    <a href="#dmz%e7%9a%84%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6%e7%ad%96%e7%95%a5" aria-label="DMZ的访问控制策略">DMZ的访问控制策略</a></li>
+                <li>
+                    <a href="#%e7%bd%91%e7%bb%9c%e6%94%bb%e5%87%bb%e7%9a%84%e4%b8%80%e8%88%ac%e6%ad%a5%e9%aa%a4%e5%92%8c%e7%bd%91%e7%bb%9c%e6%94%bb%e5%87%bb%e7%9a%84%e7%9b%ae%e6%a0%87" aria-label="网络攻击的一般步骤和网络攻击的目标">网络攻击的一般步骤和网络攻击的目标</a></li>
+                <li>
+                    <a href="#%e5%8a%a0salt%e6%95%a3%e5%88%97%e6%b3%95%e5%9c%a8%e6%8a%b5%e5%be%a1%e5%8f%a3%e4%bb%a4%e6%94%bb%e5%87%bb%e7%9a%84%e5%8e%9f%e7%90%86" aria-label="加Salt散列法在抵御口令攻击的原理">加Salt散列法在抵御口令攻击的原理</a></li>
+                <li>
+                    <a href="#%e7%bd%91%e9%97%b8%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86%e5%8f%8a%e5%85%b8%e5%9e%8b%e5%ba%94%e7%94%a8" aria-label="网闸的工作原理及典型应用">网闸的工作原理及典型应用</a></li>
+                <li>
+                    <a href="#%e6%a0%87%e5%87%86acl%e5%92%8c%e6%89%a9%e5%b1%95acl%e6%9c%89%e4%bd%95%e5%bc%82%e5%90%8c" aria-label="标准ACL和扩展ACL有何异同:">标准ACL和扩展ACL有何异同:</a></li>
+                <li>
+                    <a href="#%e5%88%86%e5%b8%83%e5%bc%8f%e6%8b%92%e7%bb%9d%e6%9c%8d%e5%8a%a1%e6%94%bb%e5%87%bb%e7%9a%84%e4%b8%80%e8%88%ac%e6%ad%a5%e9%aa%a4%e5%8f%8a%e9%98%b2%e8%8c%83%e6%8e%aa%e6%96%bd" aria-label="分布式拒绝服务攻击的一般步骤及防范措施:">分布式拒绝服务攻击的一般步骤及防范措施:</a></li></ul>
+                    
+                <li>
+                    <a href="#ipsec-vpn" aria-label="IPsec VPN">IPsec VPN</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h4 id="如何防御ip欺骗攻击">如何防御IP欺骗攻击。<a hidden class="anchor" aria-hidden="true" href="#如何防御ip欺骗攻击">#</a></h4>
+<p>IP欺骗攻击是一种常见的网络攻击，以下是防御IP欺骗攻击的几种方法：</p>
+<ol>
+<li>使用网络地址转换（NAT）： NAT是一种将一组公共IP地址分配给连接到互联网的私有网络的网络协议。 NAT可防止攻击者直接访问网络上的主机，从而增加攻击者攻击的难度。</li>
+<li>正确配置网络和协议：正确配置网络和协议可以为攻击者提供更少的攻击机会。例如，关闭不必要的端口和服务，使用VPN加密数据传输等。</li>
+<li>使用防火墙：防火墙可以过滤网络流量并拦截恶意流量。防火墙可以配置为根据IP地址、端口号以及流量类型及大小，防止攻击流量进入网络。</li>
+<li>实施防欺骗技术：防欺骗技术可以检测IP欺骗攻击并提供保护。例如，使用反欺骗技术、源地址验证技术等。</li>
+<li>更新系统和软件：更新系统和软件可以填补安全漏洞，避免攻击者利用漏洞攻击网络。建议定期更新操作系统、应用程序和网络设备的所有安全修补程序。</li>
+</ol>
+<h4 id="dmz的访问控制策略">DMZ的访问控制策略<a hidden class="anchor" aria-hidden="true" href="#dmz的访问控制策略">#</a></h4>
+<p>DMZ（Demilitarized Zone，非军事区）是指位于防火墙内部和外部网络之间的一块区域，用于存放需要向外公开访问的服务或资源。为了确保DMZ内的服务或资源能够被合法的用户或服务访问，需要制定适当的访问控制策略，以下是几个常用的策略：</p>
+<ol>
+<li>仅允许授权用户或服务访问：DMZ内的服务或资源仅应向经过授权的用户或服务提供，可以通过启用身份验证、封锁非授权IP地址等方式来实现。</li>
+<li>限制访问权限：对于需要对外公开访问的服务或资源，应根据不同层级、角色、职能等需求，限制访问权限，并对不同层级、角色、职能等用户或服务授予不同的权限。</li>
+<li>监测和记录访问行为：在DMZ设立监测和记录机制，可以及时发现和记录不正常的访问行为，避免攻击者利用漏洞进行攻击。如果出现问题，可以快速定位问题并采取相应的措施。</li>
+<li>定期审查和更新策略：定期审查和更新DMZ的访问控制策略可以保持策略的有效性，并避免新的攻击手段瞬息万变，而导致未预料的漏洞安全问题。</li>
+</ol>
+<p>综上所述，DMZ的访问控制策略可以根据网络和DMZ内的服务和资源的特点来制定，并需要不断完善和更新，以保护DMZ内的服务或资源免受未经授权的访问或攻击。</p>
+<h4 id="网络攻击的一般步骤和网络攻击的目标">网络攻击的一般步骤和网络攻击的目标<a hidden class="anchor" aria-hidden="true" href="#网络攻击的一般步骤和网络攻击的目标">#</a></h4>
+<p>网络攻击的一般步骤：</p>
+<ol>
+<li>侦察：攻击者通过各种手段收集目标网络的信息，包括网络结构、计算机设备、运行系统和服务等，为后续攻击做准备。</li>
+<li>突破：攻击者通过漏洞或弱点，利用各种工具逐步突破网络安全防线，例如SQL注入、漏洞利用等。</li>
+<li>渗透：攻击者利用已经突破的漏洞获取目标网络的控制权，例如使用远程控制软件、恶意代码等。</li>
+<li>控制：攻击者获得了目标系统的控制权之后，可以通过植入恶意软件、获取关键数据等方式，进一步扩大攻击范围和控制权。</li>
+<li>清理：攻击完成后，攻击者会尽可能消除留下的踪迹，并隐藏自身身份。</li>
+</ol>
+<p>网络攻击的目标：</p>
+<p>网络攻击的目标通常可以分为以下几种类型：</p>
+<ol>
+<li>窃取敏感信息：例如个人身份证号、银行账户密码、公司机密等。</li>
+<li>破坏系统、服务或资源：通过破坏系统、服务或资源而对目标网络实施攻击。</li>
+<li>制造威胁、恐吓或诈骗：通过向用户发起威胁、恐吓或诈骗等方式，实施网络攻击。</li>
+<li>赚钱：通过植入广告、窃取账户密码等方式获取利益。</li>
+<li>竞争对手攻击：企业或组织之间为了竞争优势，也可能实施网络攻击。</li>
+</ol>
+<h4 id="加salt散列法在抵御口令攻击的原理">加Salt散列法在抵御口令攻击的原理<a hidden class="anchor" aria-hidden="true" href="#加salt散列法在抵御口令攻击的原理">#</a></h4>
+<p>传统的散列函数（如 MD5，SHA1 等）的输出结果是固定长度的字符串，因此攻击者可以使用预计算表 (rainbow table) 或暴力猜解等方法轻松地破解散列值。</p>
+<p>为了加强口令的安全性，通常采用加Salt散列的方式。</p>
+<p>所谓“Salt”，其实就是一段随机的字符串，在原有口令的基础上添加该字符串进行散列计算，从而增加了原始口令的熵（entropy），加强了密码的安全性。攻击者在猜解的时候，无法通过预先计算出现的 Hash 值来轻松破解，因为Salt只有拥有者知道。</p>
+<p>例如，假设用户的口令是 “password”，系统生成了一段随机字符串“123”，将两者结合起来形成“password123”，然后通过散列函数进行计算得到一个散列值，并将其存储在系统中。当用户登录时，系统会根据散列值对提供的口令进行散列计算，并与储存的散列值进行比对，从而判断口令是否正确。</p>
+<p>加Salt散列的方式可以抵御口令暴力破解攻击，因为攻击者需要针对每一个用户的口令进行独立的攻击，这对于攻击者来说是一项巨大的工作量。此外，由于Salt是随机且足够长的字符串，即使攻击者能够建立一张预先计算表（rainbow table），其在猜解时也无法掌握该Salt字符串的值，从而使攻击者即使成功获得了一个口令的 Hash 值，也无法在其他地方进行攻击。</p>
+<p>总之，Salt值可以增强散列计算的安全性，提高口令的熵级别，从而对抵御口令攻击起到积极作用。</p>
+<h4 id="网闸的工作原理及典型应用">网闸的工作原理及典型应用<a hidden class="anchor" aria-hidden="true" href="#网闸的工作原理及典型应用">#</a></h4>
+<p>网闸（Network Barricade）是一种网络安全设备，其工作原理基于对网络通信流量进行监控，对不符合规则的通信流量进行过滤和拦截，以实现网络安全保护。</p>
+<p>网闸的典型工作原理可以分为以下几个步骤：</p>
+<ol>
+<li>数据采集：网闸采集网络通信流量数据，从网络中获取通信数据包，并获取其中的源IP地址、目标IP地址、协议、端口等信息。</li>
+<li>数据分析：网闸将采集到的数据进行分析和判断，判断该通信是否符合规则和策略，并确定是否需要进行拦截和过滤。</li>
+<li>数据过滤：当网闸判断出某个通信数据包需要被拦截时，可以对该数据包进行动态封堵，以阻止此类通信流量的进一步传输。</li>
+<li>数据记录：网闸会对不符合规则的通信流量进行记录，并将其汇总成报表或日志等，以便管理员或安全人员进行进一步分析和挖掘。</li>
+</ol>
+<p>网闸的应用主要有以下几种典型场景：</p>
+<ol>
+<li>企业边界保护：网闸作为企业出口的第一道安全防线，可以保护整个企业内部网络的安全。</li>
+<li>网络分段与隔离：当一个组织或企业的网络分布在多个地理位置时，网闸可以对网络和网络资源进行分段和隔离，从而保障不同网络和资源的安全。</li>
+<li>Web应用程序保护：网闸对Web应用程序进行过滤和拦截，可以阻挡各种类型的攻击，从而降低Web应用程序的漏洞被攻击的风险。</li>
+<li>数据中心保护：网闸可以对数据中心进行保护，过滤非法访问和数据包，并阻挡针对数据中心的各种类型的攻击。</li>
+</ol>
+<h4 id="标准acl和扩展acl有何异同">标准ACL和扩展ACL有何异同:<a hidden class="anchor" aria-hidden="true" href="#标准acl和扩展acl有何异同">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>异同点</th>
+<th>标准ACL</th>
+<th>扩展ACL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>目标</td>
+<td>仅基于源IP地址的过滤</td>
+<td>基于源IP地址、目标IP地址、协议、端口号、IP类型等</td>
+</tr>
+<tr>
+<td>2</td>
+<td>处理位置</td>
+<td>网络出口或核心路由器</td>
+<td>边缘路由器</td>
+</tr>
+<tr>
+<td>3</td>
+<td>记录条目数</td>
+<td>较少</td>
+<td>较多</td>
+</tr>
+<tr>
+<td>4</td>
+<td>执行顺序</td>
+<td>从上往下</td>
+<td>顺序应用多个记录</td>
+</tr>
+<tr>
+<td>5</td>
+<td>效率</td>
+<td>高</td>
+<td>低</td>
+</tr>
+</tbody>
+</table>
+<h4 id="分布式拒绝服务攻击的一般步骤及防范措施">分布式拒绝服务攻击的一般步骤及防范措施:<a hidden class="anchor" aria-hidden="true" href="#分布式拒绝服务攻击的一般步骤及防范措施">#</a></h4>
+<p>分布式拒绝服务攻击（DDoS，Distributed Denial of Service Attack）是一种网络攻击方式，通常以大量制造的假数据流量对目标系统或服务进行攻击，使其无法正常运行。DDoS攻击的一般步骤如下：</p>
+<ol>
+<li>组织军队：攻击者组织大量的僵尸网络，通常使用僵尸网络蠕虫、木马、WebShell等恶意程序来控制受害计算机。</li>
+<li>控制攻击：一旦构建起成千上万的僵尸网络，攻击者就会发起指令，使其发起攻击流量。</li>
+<li>流量打击：这些僵尸网络同时向目标系统或服务发出大量流量攻击，使其无法正常运行。</li>
+</ol>
+<p>对于DDoS攻击的防范措施如下：</p>
+<ol>
+<li>配置边界防护设施：可以使用防火墙、IPS / IDS等边界防护设施，以过滤来自外部网络的恶意数据流量，并减缓DDoS攻击的影响。</li>
+<li>使用负载均衡器：负载均衡器可以分发流量，使攻击流量更加均匀地分布到多个服务器上，从而减轻单个服务器的负担。</li>
+<li>预防攻击蠕虫：加强计算机用户的安全意识和网络安全意识，以避免病毒、蠕虫和恶意软件等恶意程序的攻击。</li>
+<li>配置黑名單</li>
+</ol>
+<h3 id="ipsec-vpn">IPsec VPN<a hidden class="anchor" aria-hidden="true" href="#ipsec-vpn">#</a></h3>
+<p>IPSec VPN是一种三层隧道协议。</p>
+<p>三层隧道协议是把各种网络协议直接装入隧道协议中，形成的数据包依靠第三层协议进行传输。</p>
+<p>同时提供安全协议选择、安全算法，确定服务所使用密钥等服务，从而在IP层提供安全保障。</p>
+<p><img loading="lazy" src="C:%5cUsers%5c85322%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20230311165709998.png" alt="image-20230311165709998"  />
+</p>
+<p>IPSec有如下两种封装模式：</p>
+<p>（1）隧道（Tunnel）模式：用户的整个IP数据包被用来计算AH或ESP头，AH或ESP头以及ESP加密的用户数据被封装在一个新的IP数据包中。通常，隧道模式应用在两个安全网关之间的通讯。</p>
+<p>（2）传输（Transport）模式：只是传输层数据被用来计算AH或ESP头，AH或ESP头以及ESP加密的用户数据被放置在原IP包头后面。通常，传输模式应用在两台主机之间的通讯，或一台主机和一个安全网关之间的通讯。</p>
+<p>IPSec VPN提供了三种安全机制：认证、加密和数据完整性。</p>
+<p>（1）认证机制。使IP通信的数据接收方能够确认数据发送方的真实身份以及数据在传输过程中是否遭篡改。</p>
+<p>（2）加密机制。通过对数据进行加密运算来保证数据的机密性，以防数据在传输过程中被窃听。</p>
+<p>（3）数据完整性。使IP通信的数据接收方能够确认数据在传输过程中是否遭篡改。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://suyiie.cloud/tags/network-security/">Network security</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://suyiie.cloud/posts/life/test/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Test</span>
+  </a>
+  <a class="next" href="https://suyiie.cloud/posts/notes/classic_crypto/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Classic_crypto</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on twitter"
+        href="https://twitter.com/intent/tweet/?text=answer&amp;url=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f&amp;hashtags=Networksecurity">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f&amp;title=answer&amp;summary=answer&amp;source=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f&title=answer">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on whatsapp"
+        href="https://api.whatsapp.com/send?text=answer%20-%20https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share answer on telegram"
+        href="https://telegram.me/share/url?text=answer&amp;url=https%3a%2f%2fsuyiie.cloud%2fposts%2fnotes%2fanswer%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+  </footer>
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: "https://suyiie.cloud",  
+            el: "#tcomment",
+            lang: 'zh-CN',
+            region: 'ap-guangzhou',  
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+</article>
+    </main>
+    <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+
+</html>
