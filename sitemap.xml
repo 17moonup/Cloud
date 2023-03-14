@@ -64,6 +64,11 @@
   </url>
   
   <url>
+    <loc>https://suyiie.cloud/posts/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://suyiie.cloud/posts/books/</loc>
   </url>
   
